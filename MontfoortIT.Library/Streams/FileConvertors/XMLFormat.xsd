@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLFormat"
+    targetNamespace="http://www.montfoortit.nl/ImportDataControlFormat.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://www.montfoortit.nl/ImportDataControlFormat.xsd"
+    xmlns:mstns="http://www.montfoortit.nl/ImportDataControlFormat.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="column" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
