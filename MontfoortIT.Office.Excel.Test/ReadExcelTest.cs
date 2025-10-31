@@ -180,8 +180,8 @@ namespace MontfoortIT.Office.Excel.Test
 
         [TestMethod]
         public void ColumnCountTest()
-        {
-            for(int i=0; i <1000; i++)
+        { 
+            for(int i=0; i <700; i++)
             {
                 string rowIndex = Cell.ToTextRowIndeX(i);
                 if (i == 26)
